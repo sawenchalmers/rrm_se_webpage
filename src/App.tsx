@@ -1,14 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Footer } from './Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className="app-body">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="rrm_se_logo_white.png" className="App-logo" alt="logo" />
         <p>
-          Welcome to Reduction Roadmap Sverige.
+          Här kommer snart mer information om<br/>Reduction Roadmap Sverige.
         </p>
         {/*
         <a
@@ -21,7 +20,9 @@ function App() {
         </a>
         */}
       </header>
+      <Footer/>
     </div>
+    
   );
 }
 
