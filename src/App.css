@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "neue-haas-grotesk-display";
 }
 
 .App-logo {
@@ -13,8 +14,10 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css?family=Martel');
+
 .App-header {
-  background-color: #282c34;
+  background-color: #2f3b47;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Martel";
 }
 
 .App-link {
