@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css?family=Martel');
 
 .App-header {
-  background-color: #2f3b47;
+  background-color: var(--main-bg-color);
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -80,6 +80,7 @@
 }
 
 .app-body {
+  --main-bg-color: #283a4d;
   text-align: center;
   font-family: "neue-haas-grotesk-display";
   max-width: 100%;
@@ -92,7 +93,7 @@
 
 .app-footer {
   align-items: center;
-  background-color: #2f3b47;
+  background-color: var(--main-bg-color);
   flex: none;
   height: 60px;
   display: flex;
