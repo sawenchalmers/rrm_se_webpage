@@ -33,7 +33,7 @@ export class Footer extends Component<IFooterProps, IFooterState> {
           }
             {/*<AnchorButton icon="link" className="bp3-button bp3-minimal" href="http://annex75.iea-ebc.org/about" target="_blank">About IEA EBC Annex 75</AnchorButton>*/}
             <div className="bp3-align-center">
-              &copy; {this.state.year > startYear? `${startYear} `:  ""}{this.state.year} Reduction Roadmap Sverige
+              &copy; {this.state.year > startYear? `${startYear} - `:  ""}{this.state.year} Reduction Roadmap Sverige
             </div>
             <div className="bp3-align-right" style={{}}>
               <a href="https://www.reductionroadmap.dk/">
