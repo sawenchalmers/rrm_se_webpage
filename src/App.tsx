@@ -19,39 +19,26 @@ const App = () => {
   // file should reside in public folder
   const pdf_file = "2025_06_16_RRMSWEHemsida_lbv.pdf"
   const num_slides = 10
+  const showPdf = false
+  const showPlaceholder = true
   
   return (
     <div className="app-body">
-      {/*
-      <header className="App-header">
-      </header>
-      */}
-      <main className="pdf-container">
-        {/*
-        <img src="rrm_se_logo_white.png" className="App-logo" alt="logo" />
-        <p>
-        Här kommer snart mer information om<br/>Reduction Roadmap Sverige.
-        </p>
-        */}
-        {/*
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-        Learn React
-        </a>
-        */}
+      
+      { showPlaceholder? (
+        <header className="App-header">
+          <img src="rrm_se_logo_white.png" className="App-logo" alt="logo" />
+          <p>
+            Här kommer snart mer information om<br/>Reduction Roadmap Sverige.
+          </p>
+        </header>
+      ): null}
+      
+      { showPdf? (<main className="pdf-container">
         <PdfViewer file={pdf_file} num_slides={num_slides}/>
-        {/*<Document file={pdf_file}
-          onLoadError={console.error}>
-          {slides.map((n) => (
-            <Page pageNumber={n}/>
-            ))}
-            </Document>
-        */}
-      </main>
+        </main>
+      ) : null
+      }
       <Footer/>
     </div>
     
